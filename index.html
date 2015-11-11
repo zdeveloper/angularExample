@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<header>
+    <title>TO DO LIST</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+
+
+    <script src="js/libs/jquery-2.1.4.min.js">
+    </script>
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/libs/angular-route.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/home.js"></script>
+</header>
+
+<body ng-app="app">
+
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand"><span>To Do List</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view=""></div>
+
+</body>
+
+</html>
